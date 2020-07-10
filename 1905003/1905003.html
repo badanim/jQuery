@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <title>jQuery Mobile</title>
+   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+	<div data-role="page" id="home">
+		<div data-role="header" data-position="fixed">
+			<h1>만년필의 매력</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#y">2만원이하 추천</a></li>
+          <li><a href="#k">2만원이상 추천</a></li>
+          <li><a href="#a">딥펜</a></li>
+        </ul>
+      </div>
+		</div>
+
+		<div data-role="content">
+      만년필에 대해 소개하고, 제가 사용해본 만년필중 좋은 제품을 추천하는 모바일 웹페이지 입니다
+      <div data-role="collapsible-set">
+        <div data-role="collapsible">
+          <h3>만년필이란?</h3>
+          <p> 볼펜처럼 펜 안에 잉크를 저장하는 잉크통이 들어있는 필기도구 입니다. 펜촉의 굵기가 회사마다 제품마다 다양하여 여러 느낌의 글씨를 쓸 수 있습니다.<br>
+          잉크 충전방식으로 2가지가 있는데 볼펜 리필심처럼 잉크가 든 막대를 갈아끼우는 카트리지 방식과 병잉크에 든 잉크를 주입하는 컨버터 방식이 있습니다.</p>
+          <div data-role="collapsible-set">
+            <div data-role="collapsible" data-theme="b">
+              <h5>구조, 동작원리</h5>
+              <p>
+                만년필의 구조 <br>
+                <img src="1.png" width="300"> <br>
+                잉크 탱크의 잉크가 모세관 현상에 의해 피드로 내려오고 필기 시 펜에 가해지는 압력으로 펜촉이 양옆으로 살짝 벌어집니다. 이 과정에서 피드에 차오른 잉크가 펜촉을 타고 흘러내려와 글씨가 써집니다.
+              </p>
+            </div>
+            <div data-role="collapsible" data-theme="b">
+              <h5>세척법</h5>
+              <p>
+                <img src="2.png" width="300"> <br>
+                1. 일회용 또는 쓰지않는 컵에 35~45도의 미지근한 물을 넣고 만년필 본체와 펜촉을 분리합니다. 분리한 펜 촉을 미지근한 물에 약 3~5분 담가두었다가 꺼냅니다. <br>
+                2. 스포이드 혹은 잉크컨버터 혹은 전용 세척도구 등을 사용해 잉크 주입구로 깨끗한 물을 천천히 주입하여 펜촉에 남아있는 잉크를 배출시킵니다. 이러한 과정을 4~5번 반복하여 깨끗한 물이 나올 때까지 진행합니다. <br>
+                3. 세척이 모두 끝난 후 마른수건 또는 먼지가 적은 천으로 남아있는 물기를 닦아내고 다시 조립하여 사용합니다.
+              </p>
+            </div>
+            <div data-role="collapsible" data-theme="b">
+              <h5>주의사항</h5>
+              <p>
+                1. 잉크는 과하게 충전하지 말것. <br>
+                2. 하나의 만년필에 여러가지 잉크를 혼합하여 쓰지 않고 잦은 컬러 교환은 하지 않는것이 좋습니다.(잉크가 내부에서 굳을 수 있음) <br>
+                3. 만년필 보관시 펜촉이 위로가게 보관합니다. <br>
+                4. 고온 또는 비행기의 탑승과 같이 압력의 변화가 있을 경우 펜촉과 카트리지 또는 컨버터를 분리하여 보관합니다. <br>
+                5. 장기간 미사용 시 카트리지 또는 컨버터를 분리하고 펜촉과 피드를 세척하여 보관합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+		<div data-role="footer" data-position="fixed"></div>
+	</div>
+
+
+
+
+
+	<div data-role="page" id="y">
+		<div data-role="header" data-add-back-btn="true" data-position="fixed">
+      <a href="#home" class="ui-btn-right">홈</a>
+      <h1> 2만원이하 추천 </h1>
+		</div>
+
+		<div data-role="content">
+      <table>
+        <tr>
+          <td>
+            <a href="#page1"> <img src="3.png" width="150" height="150"> </a> <br>
+            <a href="#page1">플래티넘 프레피</a>
+          </td>
+          <td>
+            <a href="#page2"> <img src="4.png" width="150" height="150"> </a> <br>
+            <a href="#page2">모나미 올리카</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#page3"> <img src="5.png" width="150" height="150"> </a> <br>
+            <a href="#page3"> 파이롯트 카쿠노</a>
+          </td>
+        </tr>
+      </table>
+		</div>
+
+		<div data-role="footer" data-position="fixed"></div>
+	</div>
+
+
+
+
+
+  <div data-role="page" id="k">
+		<div data-role="header" data-add-back-btn="true" data-position="fixed">
+      <a href="#home" class="ui-btn-right">홈</a>
+      <h1> 2만원이상 추천 </h1>
+		</div>
+
+		<div data-role="content">
+      <table>
+        <tr>
+          <td>
+            <a href="#page4"> <img src="6.png" width="150" height="150"> </a> <br>
+            <a href="#page4">라미 사파리</a>
+          </td>
+          <td>
+            <a href="#page5"> <img src="7.png" width="150" height="150"> </a> <br>
+            <a href="#page5">트위스비 에코</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#page6"> <img src="8.png" width="150" height="150"> </a> <br>
+            <a href="#page6">문맨 M2</a>
+          </td>
+        </tr>
+      </table>
+		</div>
+
+		<div data-role="footer" data-position="fixed"></div>
+	</div>
+
+
+
+
+
+
+
+  <div data-role="page" id="a">
+		<div data-role="header" data-add-back-btn="true" data-position="fixed">
+      <a href="#home" class="ui-btn-right">홈</a>
+      <h1> 딥펜 </h1>
+		</div>
+
+		<div data-role="content">
+        <div data-role="collapsible">
+          <h3>딥펜이란?</h3>
+          <p>
+            딥펜은 만년필보다 훨씬 전에 쓰던 방식으로 잉크를 채워서 쓰는것이 아닌 잉크병에 펜촉을 찍어서 사용하는 펜이다. <br>
+            만년필보다 필압의 영향을 많이받아 필기가 어려울수 있다. 잉크를 많이 먹고 흐름도 좋아 펜 뿐만 아니라 종이도 좋은것을 써야 제대로 사용이 가능하다.
+            사용은 만년필보다 불편하지만 세척과 관리가 쉽고 만년필엔 사용못하는 펄잉크, 안료잉크, 문서보존 방수잉크 등등을 사용할 수 있어
+            찾는 매니아들도 많다. 연성(잘 휘어지고 필압의 영향을 많이받음)인 펜촉들이 많아 캐리그라피 용으로도 많이 쓰인다.<br>
+
+          </p>
+        </div>
+        <table>
+          <tr>
+            <td>
+              <a href="#page7"> <img src="9.png" width="150" height="150"> </a> <br>
+              <a href="#page7">브라우스 딥펜촉</a>
+            </td>
+          </tr>
+        </table>
+  		</div>
+
+  		<div data-role="footer" data-position="fixed"></div>
+  	</div>
+
+
+
+
+
+  <div data-role="page" id="page1">
+    <div data-role="header" data-add-back-btn="true" data-position="fixed">
+      <a href="#home" class="ui-btn-right">홈</a>
+      <h1>플래티넘 프레피</h1>
+    </div>
+
+    <div data-role="content">
+      <table>
+        <tr>
+          <td>
+            <img src="3.png" width="300"> <br>
+            회사 : 플래티넘(일본) <br>
+            가격 : 2000~4000 <br>
+            <a href="https://search.shopping.naver.com/detail/detail.nhn?nvMid=5757222622&query=%ED%94%8C%EB%9E%98%ED%8B%B0%EB%84%98%20%ED%94%84%EB%A0%88%ED%94%BC&NaPm=ct%3Dkcfyole0%7Cci%3D9b84f688a5039695511c9bef7f64e8685977db9b%7Ctr%3Dslsl%7Csn%3D95694%7Chk%3D94b2abe8cd436113a0cd8cc9fbb72c9930ad3269">구매링크</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <br>
+            오프라인인 교보문고 핫트랙스에서도 구할수있는 만년필이다. <br>
+            매우 싼 가격이 특징이지만 만년필의 느낌은 확실히 내고 필기시 끊김이 없어 입문용으로 많이 추천되고 이미 만년필을 이용하는 사람에겐 막 쓰는 용도로 많이 사용된다. <br>
+            대부분 카트리지 방식으로 사용하고 컨버터가 있긴하지만 12000원 상당으로 만년필 본체보다 비싸기 때문에 대부분 카트리지로만 활용한다. 그래서 세척도 가능하면 구입~고장까지 한번도 하지않고 잉크도 한종류의 잉크만 넣어 사용한다.
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div data-role="footer" data-position="fixed"></div>
+  </div>
+
+
+
+
+
+  <div data-role="page" id="page2">
+    <div data-role="header" data-add-back-btn="true" data-position="fixed">
+      <a href="#home" class="ui-btn-right">홈</a>
+      <h1>모나미 올리카</h1>
+    </div>
+
+    <div data-role="content">
+      <table>
+        <tr>
+          <td>
+            <img src="4.png" width="300"> <br>
+            회사 : 모나미(한국) <br>
+            가격 : 2000~3000 <br>
+            <a href="https://search.shopping.naver.com/detail/detail.nhn?nvMid=20002525946&query=%EB%AA%A8%EB%82%98%EB%AF%B8%20%EC%98%AC%EB%A6%AC%EC%B9%B4&NaPm=ct%3Dkcfz5zxk%7Cci%3D1d99f437cfd1954e250a98463e75d8346dcda0a1%7Ctr%3Dslsl%7Csn%3D95694%7Chk%3D74c1c8d7eba2932e820366f82ba02c1fa8636046">구매링크</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <br>
+            일반 검정, 빨강, 파랑 볼펜으로 유명한 한국 회사 모나미에서 만든 저가 만년필이다. 교보문고 핫트랙스 등에서 오프라인에서도 쉽게 구할수있다.<br>
+            컨버터가 따로 나오지 않은 만년필로 카트리지로만 사용할 수 있다. 필기 시 약간 사각거리는 종이 긁는 느낌이 나며 아날로그 감성을 느끼기 좋다. <br>
+            현재 보유중인 만년필이라 시필 영상을 찍어보았다.
+            <video controls width="100%"> <source src="O.mp4" type="video/mp4"> </video>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div data-role="footer" data-position="fixed"></div>
+  </div>
+
+
+
+
+
+  <div data-role="page" id="page3">
+    <div data-role="header" data-add-back-btn="true" data-position="fixed">
+      <a href="#home" class="ui-btn-right">홈</a>
+      <h1>파이롯트 카쿠노</h1>
+    </div>
+
+    <div data-role="content">
+      <table>
+        <tr>
+          <td>
+            <img src="5.png" width="300"> <br>
+            회사 : 파이롯트(일본) <br>
+            가격 : 8000~12000 <br>
+            <a href="https://smartstore.naver.com/_ecopen/products/4766237026?n_media=11068&n_query=%ED%8C%8C%EC%9D%B4%EB%A1%AF%ED%8A%B8%EC%B9%B4%EC%BF%A0%EB%85%B8&n_rank=1&n_ad_group=grp-a001-02-000000014419700&n_ad=nad-a001-02-000000087320279&n_campaign_type=2&n_mall_pid=4766237026&NaPm=ct%3Dkcg33lxc%7Cci%3D0AO0001Sf0vt1CrVcv3i%7Ctr%3Dpla%7Chk%3D2a7a9028e8504746cec0f82270acf8dc09cb8ac6">구매링크</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <br>
+            다른 만년필에 비해 굵기가 얇은 편에 속하는 만년필이다. 보통 동양권의 만년필이 서양권보다 얇은 감이 있는데 카쿠노는 그중에서도 얇은편에 속하는 세필이다.<br>
+            필기 시 약간 사각거리는 느낌이 나며 닙에 윙크하는 표정이 그려져 있는것이 특징이다. 이 표정과 작은 크기 때문에 아동용 느낌이 난다는 평도 있지만 귀엽다는 평도 많다. <br>
+            현재 보유중인 만년필이라 시필 영상을 찍어보았다.
+            <video controls width="100%"> <source src="K.mp4" type="video/mp4"> </video>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div data-role="footer" data-position="fixed"></div>
+  </div>
+
+
+
+
+
+  <div data-role="page" id="page4">
+    <div data-role="header" data-add-back-btn="true" data-position="fixed">
+      <a href="#home" class="ui-btn-right">홈</a>
+      <h1>라미 사파리</h1>
+    </div>
+
+    <div data-role="content">
+      <table>
+        <tr>
+          <td>
+            <img src="6.png" width="300"> <br>
+            회사 : 라미(독일) <br>
+            가격 : 20000~25000 <br>
+            <a href="https://smartstore.naver.com/penletter/products/344817683?NaPm=ct%3Dkcg3hnbs%7Cci%3Dd2e81839961b4e7d5aa319f89905af7fd0cf1379%7Ctr%3Dslsl%7Csn%3D279444%7Chk%3D5e80c6f078a8bb4c2277c75d4e784544699453be">구매링크</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <br>
+            서양권의 만년필로 같은 굵기의 닙이라도 굵기가 동양권의 만년필보다 굵다. 내구성이 좋고 내가 써본 만년필중 가장 오래된 만년필로 현재 6년 조금 넘게 사용중이다. <br>
+            과거엔 3만~4만 대의 가격으로 비싼편에 속했지만 물가의 변동인지 최근엔 가격이 많이 내려왔다. 만년필 매니아들 사이에서 입문용으로 가장 많이 추천되는 제품중 하나이다. 뚜껑에 클립이 있어 보관이 편리하고 그립부분이 파여있어 펜을 바르게 잡도록 도와주고 필기 시 편안함을 제공한다. <br>
+            현재 보유중인 만년필이라 시필 영상을 찍어보았다.
+            <video controls width="100%"> <source src="S.mp4" type="video/mp4"> </video>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div data-role="footer" data-position="fixed"></div>
+  </div>
+
+
+
+
+
+  <div data-role="page" id="page5">
+    <div data-role="header" data-add-back-btn="true" data-position="fixed">
+      <a href="#home" class="ui-btn-right">홈</a>
+      <h1>트위스비 에코</h1>
+    </div>
+
+    <div data-role="content">
+      <table>
+        <tr>
+          <td>
+            <img src="7.png" width="300"> <br>
+            회사 : 트위스비(대만) <br>
+            가격 : 37600 <br>
+            <a href="https://smartstore.naver.com/_ecopen/products/4855745432?NaPm=ct%3Dkcg3uf7c%7Cci%3D23c8f695349baa20001f17afbb8197686f401246%7Ctr%3Dslsl%7Csn%3D457624%7Chk%3D13ebed70aaa811a0eeec4da0dd870f59f3a967a5">구매링크</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <br>
+            최근 등장한 중저가형 만년필. 펜촉(Nib)과 피드가 완전 분리가 된다는것이 특징으로 다른 만년필보다 깔끔한 세척이 가능하다. <br>
+            필기 시 끊김이 거의없고 사각거리는 느낌보다는 부드럽게 써지는 느낌이다. 최근 입문용으로 가장 많이 추천되는 제품중 하나이며 세척이 장점으로 만년필 매니아들 사이에선 다른 만년필엔 사용할 수 없는 펄잉크(반짝이가 들어간 잉크) 전용으로 구매하는 경우가 많다.
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div data-role="footer" data-position="fixed"></div>
+  </div>
+
+
+
+
+
+  <div data-role="page" id="page6">
+    <div data-role="header" data-add-back-btn="true" data-position="fixed">
+      <a href="#home" class="ui-btn-right">홈</a>
+      <h1>문맨 M2</h1>
+    </div>
+
+    <div data-role="content">
+      <table>
+        <tr>
+          <td>
+            <img src="8.png" width="300"> <br>
+            회사 : 문맨(중국) <br>
+            가격 : 20000 <br>
+            <a href="https://smartstore.naver.com/yaja/products/4645287244?NaPm=ct%3Dkcg42jn4%7Cci%3D18398709704192a50e8ced2baf2e43f94245a0a0%7Ctr%3Dslsl%7Csn%3D822481%7Chk%3De83dfecbafd80ecc99d50094bed7962f4dc6f8b8">구매링크</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <br>
+            컨버터나 카트리지를 사용하는 방식이 아닌 아이드로퍼 라는 방식으로 배럴(펜 몸통) 전체가 잉크통이 되는 방식이다.
+            때문에 카트리지나 컨버터보다 한번에 들어가는 잉크의 양이 엄청나므로 오래 필기를 할 수 있다. <br>
+            제품을 만든 문맨이란 회사는 이런 아이드로퍼를 전문 컨셉으로 잡아 제작, 판매하는 업체이다.
+            부드러운 느낌으로 써지며 한가지 아쉬운점이 있다면 빠르게 선을 그을 시 끊김 현상이 조금 있어 드로잉 용으로는 불편하다. 일반 필기용으로는 괜찮다.
+            하지만 보통 저가 아이드로퍼는 잉크 샘 현상이 있어 손에 잉크가 묻는 경우가 많은데 이 제품은 그런점은 없다. <br>
+            현재 보유중인 만년필이라 시필 영상을 찍어보았다.
+            <video controls width="100%"> <source src="M.mp4" type="video/mp4"> </video>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div data-role="footer" data-position="fixed"></div>
+  </div>
+
+
+
+
+
+  <div data-role="page" id="page7">
+    <div data-role="header" data-add-back-btn="true" data-position="fixed">
+      <a href="#home" class="ui-btn-right">홈</a>
+      <h1>브라우스 딥펜</h1>
+    </div>
+
+    <div data-role="content">
+      <table>
+        <tr>
+          <td>
+            <img src="9.png" width="300"> <br>
+            회사 : 브라우스(독일) <br>
+            가격 : 2000원 안팎 <br>
+            <a href="https://smartstore.naver.com/callistudio/products/466037607">구매링크</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <br>
+            딥펜 계열에서 가장 유명하고 인기 많은 제품이다. 다른 유명한 제품으로는 여러회사에서 나온 G펜 종류가 있지만 직접 써보지않아 지금은 언급하지 않겠다. <br>
+            펜촉이 여러가지 있는데 여기서 써본건 스테노와 로즈닙이다.
+          </td>
+        </tr>
+      </table>
+      <div data-role="collapsible-set">
+        <div data-role="collapsible">
+          <h3>스테노</h3>
+          <p>
+            딥펜 계열에서 기본이 된다 할정도로 유명한 펜촉이다. 푸른 호박이라고도 불리며 적당한 탄성을 가지고 있고 필압조절이 쉬워 초보자가 입문하기 좋다.
+          </p>
+        </div>
+        <div data-role="collapsible">
+          <h3>로즈닙</h3>
+          <p>
+            매우 연성인 펜촉이며 조금만 힘을줘도 펜촉이 많이 벌어져서 필압조절이 어려운편인 펜촉이다.
+            펜촉을 길들이는 시간도 필요해 인내를 요구하는 펜이며 잉크를 먹는 양도 많다. <br>
+            까다로워 보이는 펜이지만 익숙해지고 큰 종이에 큼직하게 캘리그라피를 쓰면 굉장히 이쁘게 글씨가 나오는 매력적인 펜이다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed"></div>
+  </div>
+</body>
+</html>
